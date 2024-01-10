@@ -1,0 +1,21 @@
+﻿<Window x:Class="hardy_analyseOBS.AnalyseTool"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hardy_analyseOBS"
+        mc:Ignorable="d"
+        Title="AnalyseTool" Height="350" Width="600"
+        ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Margin="15,0,15,0" >
+            <Label x:Name="cpu_usage_label" Content="CPU: CPU__usage" Height="25"/>
+            <ProgressBar x:Name="cpu_usage_bar" Height="25" />
+            <Label x:Name="ram_usage_label" Content="RAM: RAM__usage" Height="25"/>
+            <ProgressBar x:Name="ram_usage_bar" Height="25" />
+            <Label x:Name="gpu_usage_label" Content="GPU: GPU__usage" Height="25"/>
+            <ProgressBar x:Name="gpu_usage_bar" Height="25" />
+        </StackPanel>
+        <Button x:Name="start_stop_button" Content="Start" FontSize="24" Background="DarkGreen" Width="150" Height="75" Margin="200,191,200,43" Click="start_stop_button_Click" />
+    </Grid>
+</Window>

@@ -31,11 +31,6 @@ namespace hardy_analyseOBS
             ram_label.Content = String.Format("RAM: \n{0:00} %", ram_avg);
             gpu_label.Content = String.Format("GPU: \n{0:00} %", gpu_avg);
 
-            //if (cpu_avg < 40 && gpu_avg)
-            //{
-                
-            //}
-
             Show();
         }
 
